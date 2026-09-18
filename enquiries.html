@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Enquiries | Lulu's Pet Store</title>
+    <link rel="stylesheet" href="../css_assets/style.css">
+</head>
+<body>
+
+    <header>
+        <a href="index.html">
+            <img src="../_images/petstorelogo.jpg" alt="Lulu's Pet Store Logo">
+        </a>
+
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About Us</a></li>
+                <li><a href="services.html">Services</a></li>
+                <li><a href="enquiries.html">Enquiries</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <h1>Enquiries</h1>
+        <p>Contact us for enquiries about our pet products, grooming services, bookings
+        and general pet care.</p>
+
+        <section>
+            <h2>Order Enquiry Form</h2>
+            <form action="#" method="post">
+                <label for="name">Name:</label><br>
+                <input type="text" id="name" name="name" required><br><br>
+
+                <label for="email">Email:</label><br>
+                <input type="email" id="email" name="email" required><br><br>
+
+                <label for="phone">Phone Number:</label><br>
+                <input type="tel" id="phone" name="phone" required><br><br>
+
+                <label for="enquiry-type">Enquiry Type:</label><br>
+                <select id="enquiry-type" name="enquiry-type">
+                    <option value="products">Pet Products</option>
+                    <option value="grooming">Grooming Services</option>
+                    <option value="booking">Booking</option>
+                    <option value="pet-care">General Pet Care</option>
+                </select><br><br>
+
+                <label for="message">Your Message:</label><br>
+                <textarea id="message" name="message" rows="5" required></textarea><br><br>
+
+                <button type="submit">Submit Enquiry</button>
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2026 Lulu's Pet Store. All rights reserved.</p>
+    </footer>
+
+</body>
+</html>
