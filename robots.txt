@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://YOUR-LIVE-SITE-URL/sitemap.xml
+Sitemap: https://koketso711.github.io/wede5020.part2/sitemap.xml
