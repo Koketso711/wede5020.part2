@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact &amp; Locations | Lulu's Pet Store</title>
+    <meta name="description" content="Find Lulu's Pet Store in Rosebank and Sandton, Johannesburg. View our branches on an interactive map or send us a message.">
+    <meta name="keywords" content="pet store Rosebank, pet store Sandton, contact Lulu's Pet Store, pet shop near me">
+    <meta name="author" content="Lulu's Pet Store">
+    <meta property="og:title" content="Contact &amp; Locations | Lulu's Pet Store">
+    <meta property="og:description" content="Two Johannesburg branches: Rosebank and Sandton.">
+    <meta property="og:type" content="website">
+    <link rel="icon" href="../_images/petstorelogo.jpg">
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css">
+    <link rel="stylesheet" href="../css_assets/style.css">
+    <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+    <script src="../js/script.js" defer></script>
+</head>
+<body>
+
+    <header>
+        <a href="index.html">
+            <img src="../_images/petstorelogo.jpg" alt="Lulu's Pet Store Logo" width="60" height="60">
+        </a>
+        <nav aria-label="Main navigation">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About Us</a></li>
+                <li><a href="services.html">Services</a></li>
+                <li><a href="enquiries.html">Enquiries</a></li>
+                <li><a href="contact.html" aria-current="page">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <h1>Contact Us</h1>
+        <p>Visit one of our Johannesburg stores or send us a message. To enquire about a product or book grooming,
+        please use our <a href="enquiries.html">enquiry form</a>.</p>
+
+        <section>
+            <h2>Our Locations</h2>
+            <div class="locations-wrap">
+                <div class="location">
+                    <h3>Main Branch</h3>
+                    <p>78 Jan Smuts Avenue, Rosebank, Johannesburg, 2196</p>
+                    <p>Tel: 011 234 5678</p>
+                    <p>Hours: Mon&ndash;Sat, 08:00&ndash;17:00</p>
+                </div>
+                <div class="location">
+                    <h3>Second Branch</h3>
+                    <p>12 Rivonia Road, Sandton, Johannesburg, 2196</p>
+                    <p>Tel: 011 876 5432</p>
+                    <p>Hours: Mon&ndash;Sat, 08:00&ndash;17:00</p>
+                </div>
+            </div>
+
+            <h2>Find Us</h2>
+            <div class="map-buttons">
+                <button type="button" class="cta-button" data-branch="0">Show Main Branch</button>
+                <button type="button" class="cta-button" data-branch="1">Show Second Branch</button>
+            </div>
+            <div id="map" role="region" aria-label="Map showing both Lulu's Pet Store branches"></div>
+        </section>
+
+        <section>
+            <h2>Send Us a Message</h2>
+            <form id="contactForm" novalidate>
+                <div class="form-group">
+                    <label for="cname">Full name</label>
+                    <input type="text" id="cname" name="name" data-validate="name" autocomplete="name" required>
+                    <span class="error" role="alert"></span>
+                </div>
+
+                <div class="form-group">
+                    <label for="cemail">Email address</label>
+                    <input type="email" id="cemail" name="email" data-validate="email" autocomplete="email" required>
+                    <span class="error" role="alert"></span>
+                </div>
+
+                <div class="form-group">
+                    <label for="cphone">Phone number</label>
+                    <input type="tel" id="cphone" name="phone" data-validate="phone" placeholder="011 234 5678" autocomplete="tel" required>
+                    <span class="error" role="alert"></span>
+                </div>
+
+                <div class="form-group">
+                    <label for="messageType">Type of message</label>
+                    <select id="messageType" name="messageType" data-validate="required" required>
+                        <option value="">-- Select --</option>
+                        <option value="General enquiry">General enquiry</option>
+                        <option value="Feedback">Feedback</option>
+                        <option value="Complaint">Complaint</option>
+                        <option value="Compliment">Compliment</option>
+                    </select>
+                    <span class="error" role="alert"></span>
+                </div>
+
+                <div class="form-group">
+                    <label for="cmessage">Your message</label>
+                    <textarea id="cmessage" name="message" rows="5" maxlength="500" data-validate="message" required></textarea>
+                    <span class="error" role="alert"></span>
+                </div>
+
+                <button type="submit">Send Message</button>
+            </form>
+
+            <div id="contactStatus" class="result" aria-live="polite"></div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; <span id="year">2026</span> Lulu's Pet Store. All rights reserved.</p>
+    </footer>
+
+</body>
+</html>

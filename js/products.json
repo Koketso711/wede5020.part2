@@ -1,0 +1,17 @@
+{
+  "products": [
+    { "id": 1, "name": "Premium Dry Dog Food 5kg", "category": "Food", "price": 389, "inStock": true },
+    { "id": 2, "name": "Grain-Free Cat Food 2kg", "category": "Food", "price": 249, "inStock": true },
+    { "id": 3, "name": "Bird Seed Mix 1kg", "category": "Food", "price": 79, "inStock": false },
+    { "id": 4, "name": "Adjustable Dog Collar", "category": "Accessories", "price": 129, "inStock": true },
+    { "id": 5, "name": "Retractable Dog Lead", "category": "Accessories", "price": 199, "inStock": true },
+    { "id": 6, "name": "Cosy Pet Bed (Medium)", "category": "Accessories", "price": 349, "inStock": true },
+    { "id": 7, "name": "Chew Toy Rope Set", "category": "Toys", "price": 89, "inStock": true },
+    { "id": 8, "name": "Interactive Cat Teaser", "category": "Toys", "price": 69, "inStock": false }
+  ],
+  "services": [
+    { "id": 101, "name": "Bath & Brush", "price": 150 },
+    { "id": 102, "name": "Full Groom", "price": 280 },
+    { "id": 103, "name": "Nail Trim", "price": 60 }
+  ]
+}

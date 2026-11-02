@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Make an Enquiry | Lulu's Pet Store</title>
+    <meta name="description" content="Enquire about pet products or book dog grooming at Lulu's Pet Store in Johannesburg. Get an instant cost estimate and availability.">
+    <meta name="keywords" content="pet shop enquiry, book dog grooming Johannesburg, pet product prices">
+    <meta name="author" content="Lulu's Pet Store">
+    <meta property="og:title" content="Make an Enquiry | Lulu's Pet Store">
+    <meta property="og:description" content="Enquire about products or book grooming and get an instant estimate.">
+    <meta property="og:type" content="website">
+    <link rel="icon" href="../_images/petstorelogo.jpg">
+    <link rel="stylesheet" href="../css_assets/style.css">
+    <script src="../js/script.js" defer></script>
+</head>
+<body>
+
+    <header>
+        <a href="index.html">
+            <img src="../_images/petstorelogo.jpg" alt="Lulu's Pet Store Logo" width="60" height="60">
+        </a>
+        <nav aria-label="Main navigation">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About Us</a></li>
+                <li><a href="services.html">Services</a></li>
+                <li><a href="enquiries.html" aria-current="page">Enquiries</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <h1>Enquiries</h1>
+        <p>Enquire about our pet products or grooming services. Fill in the form and you will instantly see an
+        estimated cost and availability. For general messages, please use our <a href="contact.html">contact page</a>.</p>
+
+        <section>
+            <h2>Order Enquiry Form</h2>
+            <form id="enquiryForm" novalidate>
+                <div class="form-group">
+                    <label for="name">Full name</label>
+                    <input type="text" id="name" name="name" data-validate="name" autocomplete="name" required>
+                    <span class="error" role="alert"></span>
+                </div>
+
+                <div class="form-group">
+                    <label for="email">Email address</label>
+                    <input type="email" id="email" name="email" data-validate="email" autocomplete="email" required>
+                    <span class="error" role="alert"></span>
+                </div>
+
+                <div class="form-group">
+                    <label for="phone">Phone number</label>
+                    <input type="tel" id="phone" name="phone" data-validate="phone" placeholder="011 234 5678" autocomplete="tel" required>
+                    <span class="error" role="alert"></span>
+                </div>
+
+                <div class="form-group">
+                    <label for="enquiryType">What are you enquiring about?</label>
+                    <select id="enquiryType" name="enquiryType" data-validate="required" required>
+                        <option value="">-- Select --</option>
+                        <option value="product">Pet product</option>
+                        <option value="service">Grooming service</option>
+                    </select>
+                    <span class="error" role="alert"></span>
+                </div>
+
+                <div class="form-group">
+                    <label for="item">Product or service</label>
+                    <select id="item" name="item" data-validate="required" required>
+                        <option value="">-- Select --</option>
+                    </select>
+                    <span class="error" role="alert"></span>
+                </div>
+
+                <div class="form-group">
+                    <label for="quantity">Quantity (or number of pets)</label>
+                    <input type="number" id="quantity" name="quantity" data-validate="quantity" min="1" max="20" value="1" required>
+                    <span class="error" role="alert"></span>
+                </div>
+
+                <div class="form-group">
+                    <label for="date">Preferred date (collection or appointment)</label>
+                    <input type="date" id="date" name="date" data-validate="date" required>
+                    <span class="error" role="alert"></span>
+                </div>
+
+                <div class="form-group">
+                    <label for="message">Additional details</label>
+                    <textarea id="message" name="message" rows="4" maxlength="500" data-validate="message" required></textarea>
+                    <span class="error" role="alert"></span>
+                </div>
+
+                <button type="submit">Submit Enquiry</button>
+            </form>
+
+            <div id="enquiryResult" class="result" aria-live="polite"></div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; <span id="year">2026</span> Lulu's Pet Store. All rights reserved.</p>
+    </footer>
+
+</body>
+</html>

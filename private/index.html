@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lulu's Pet Store | Pet Shop in Johannesburg</title>
+    <meta name="description" content="Lulu's Pet Store in Johannesburg offers quality pet food, accessories and professional dog grooming. Visit our Rosebank or Sandton branch today.">
+    <meta name="keywords" content="pet store Johannesburg, pet shop Rosebank, dog grooming Sandton, pet food, pet accessories">
+    <meta name="author" content="Lulu's Pet Store">
+    <meta property="og:title" content="Lulu's Pet Store | Pet Shop in Johannesburg">
+    <meta property="og:description" content="Quality pet food, accessories and professional grooming in Johannesburg.">
+    <meta property="og:type" content="website">
+    <link rel="icon" href="../_images/petstorelogo.jpg">
+    <link rel="stylesheet" href="../css_assets/style.css">
+    <script src="../js/script.js" defer></script>
+</head>
+<body>
+
+    <header>
+        <a href="index.html">
+            <img src="../_images/petstorelogo.jpg" alt="Lulu's Pet Store Logo" width="60" height="60">
+        </a>
+        <nav aria-label="Main navigation">
+            <ul>
+                <li><a href="index.html" aria-current="page">Home</a></li>
+                <li><a href="about.html">About Us</a></li>
+                <li><a href="services.html">Services</a></li>
+                <li><a href="enquiries.html">Enquiries</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <h1>Welcome to Lulu's Pet Store</h1>
+        <h3>Everything your pet needs, all in one place</h3>
+        <p>From quality pet food and accessories to professional grooming, Lulu's Pet Store is here to help
+        Johannesburg pet owners care for the animals they love. Browse our
+        <a href="services.html">services and products</a> or
+        <a href="enquiries.html">make an enquiry</a> to book an appointment.</p>
+
+        <a href="enquiries.html" class="cta-button">Make an Enquiry</a>
+        <button type="button" class="cta-button" id="openHours">View Opening Hours</button>
+
+        <section class="reveal">
+            <h2>Our Gallery</h2>
+            <p>Click any photo to view it larger.</p>
+            <div class="gallery">
+                <img src="../_images/food.jpg" alt="Selection of quality dry and wet pet food" loading="lazy">
+                <img src="../_images/grooming.jpg" alt="Dog being professionally groomed" loading="lazy">
+                <img src="../_images/pet.jpg" alt="Pet accessories including collars and toys" loading="lazy">
+            </div>
+        </section>
+
+        <section class="reveal">
+            <h2>Why Choose Lulu's?</h2>
+            <ul>
+                <li>Quality food for dogs, cats, birds and small animals</li>
+                <li>Experienced, gentle groomers</li>
+                <li>Two convenient branches in Rosebank and Sandton</li>
+            </ul>
+            <p>Learn more <a href="about.html">about our story</a> or <a href="contact.html">find a branch near you</a>.</p>
+        </section>
+    </main>
+
+    <div class="modal" id="hoursModal" role="dialog" aria-modal="true" aria-labelledby="hoursTitle">
+        <div class="modal-content">
+            <button class="modal-close" type="button" aria-label="Close">&times;</button>
+            <h3 id="hoursTitle">Opening Hours</h3>
+            <p>Monday to Saturday: 08:00 &ndash; 17:00</p>
+            <p>Sunday: Closed</p>
+        </div>
+    </div>
+
+    <footer>
+        <p>&copy; <span id="year">2026</span> Lulu's Pet Store. All rights reserved.</p>
+    </footer>
+
+</body>
+</html>
