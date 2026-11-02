@@ -7,7 +7,7 @@
 - **Group:** [5]
 
 ## Live Website
-[Paste your deployed website link here]
+[https://koketso711.github.io/wede5020.part2/]
 
 ## Project Overview
 This repository contains a website for Lulu's Pet Store, a small business in Johannesburg offering pet food, accessories, grooming and general pet care advice. Part 1 covered planning and HTML structure, Part 2 covered CSS styling and responsive design, and Part 3 adds JavaScript functionality, SEO, form validation and deployment.
@@ -83,7 +83,7 @@ External stylesheet (css_assets/style.css) linked to all pages, CSS reset, typog
 - Error messages appear under each field and update as the user corrects them.
 
 ## Deployment
-The site is deployed on [Netlify / GitHub Pages]. Live link: [paste link here].
+[The site is deployed on GitHub Pages. Live link: https://koketso711.github.io/wede5020.part2/].
 
 ## Sitemap
 - Home (index.html)
